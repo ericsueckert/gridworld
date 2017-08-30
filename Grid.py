@@ -1,15 +1,3 @@
-'''Grid.py
-Create the Grid World MDP used in many of the Berkeley lectures.
-
-Also run a test consisting of one episode of random exploration
-in this world, receiving the rewards along the way.
-
-S. Tanimoto, May 14, 2016.
-
-
-CSE 415 Students: DO NOT MODIFY THIS FILE, AND DO NOT TURN IT IN.
-
-'''
 
 ACTIONS = ['North', 'South', 'East', 'West', 'End']
 # Note that an action is NOT the same thing as an operator, because
@@ -129,5 +117,3 @@ def R(s, a, sp):
     if s==(3,2): return 1.0  # the Gem
     if s==(3,1): return -1.0 # the Pit
     return 0.0   # cost of living.
-
-                  

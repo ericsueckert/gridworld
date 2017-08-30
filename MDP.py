@@ -1,28 +1,6 @@
-'''MDP.py
-S. Tanimoto, May 2016, 2017.
+'''
 
-Provides representations for Markov Decision Processes, plus
-functionality for running the transitions.
-
-The transition function should be a function of three arguments:
-T(s, a, sp), where s and sp are states and a is an action.
-The reward function should also be a function of the three same
-arguments.  However, its return value is not a probability but
-a numeric reward value -- any real number.
-
-operators:  state-space search objects consisting of a precondition
- and deterministic state-transformation function.
- We assume these are in the "QUIET" format used in earlier assignments.
-
-actions:  objects (for us just Python strings) that are 
- stochastically mapped into operators at runtime according 
- to the Transition function.
-
-Eric Eckert 1338722
-CSE 415 SP17
-Tanimoto
-
-
+Eric Eckert
 '''
 import random
 import itertools

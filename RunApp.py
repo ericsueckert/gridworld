@@ -1,11 +1,6 @@
-'''RunApp.py
+'''
 
-This program imports Grid.py and MDP.py and runs certain algorithms to
-demonstrate aspects of reinforcement learning.
-
-Eric Eckert 1338722
-CSE 415 SP17
-Tanimoto
+Eric Eckert
 '''
 
 import MDP, Grid
@@ -20,14 +15,14 @@ def GW_Values_string(V_dict):
     grid = []
     s = "["
     rowl = []
-    
+
     for i in range(3):
         for j in range(4):
             rowl.append(s)
 
         grid.append(rowl)
         rowl = []
-        
+
     for state in temp:
         row = 2-state[1]
         col = state[0]
@@ -43,7 +38,7 @@ def GW_Values_string(V_dict):
     return s
 
 def GW_QValues_string(Q_dict):
-    
+
     #Remove "DEAD" state so we can sort values
     temp = {}
     temp.update(Q_dict)
@@ -56,14 +51,14 @@ def GW_QValues_string(Q_dict):
     grid = []
     s = "["
     rowl = []
-    
+
     for i in range(3):
         for j in range(4):
             rowl.append(s)
 
         grid.append(rowl)
         rowl = []
-        
+
     for state in temp:
         #print(state)
 
@@ -98,14 +93,14 @@ def GW_Policy_string(optPolicy):
     grid = []
     s = "["
     rowl = []
-    
+
     for i in range(3):
         for j in range(4):
             rowl.append(s)
 
         grid.append(rowl)
         rowl = []
-        
+
     for state in temp:
         row = 2-state[1]
         col = state[0]
